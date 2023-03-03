@@ -1,0 +1,98 @@
+
+/* inter-regular - latin */
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/inter-v12-latin-regular.eot"); /* IE9 Compat Modes */
+    src: local(""),
+      url("../fonts/inter-v12-latin-regular.eot?#iefix")
+        format("embedded-opentype"),
+      /* IE6-IE8 */ url("../fonts/inter-v12-latin-regular.woff2") format("woff2"),
+      /* Super Modern Browsers */ url("../fonts/inter-v12-latin-regular.woff")
+        format("woff"),
+      /* Modern Browsers */ url("../fonts/inter-v12-latin-regular.ttf")
+        format("truetype"),
+      /* Safari, Android, iOS */ url("../fonts/inter-v12-latin-regular.svg#Inter")
+        format("svg"); /* Legacy iOS */
+  }
+  
+  
+  html,
+  body {
+    overflow: hidden;
+  }
+  .wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .logo {
+      position: relative;
+      width: 56.51vw;
+      z-index: 1;
+    }
+    .title {
+      position: absolute;
+      bottom: 4.167vw;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.667vw;
+      line-height: 2.188vw;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 1280px) {
+      .wrapper {
+          .logo {
+            width: 68.848vw;
+          }
+          .title {
+            bottom: 5.859vw;
+            font-size: 2.734vw;
+            line-height: 4.102vw;
+          }
+        }
+  }
+
+
+  @media only screen and (max-width: 860px) {
+    .wrapper {
+        .logo {
+          width: 76.953vw;
+        }
+        .title {
+          bottom: 7.813vw;
+          font-size: 3.646vw;
+          line-height: 5.469vw;
+        }
+      }
+}
+  @media only screen and (max-width: 600px) {
+    .wrapper {
+        .logo {
+          width: 85.6vw;
+        }
+        .title {
+          bottom: 13.333vw;
+          font-size: 6.4vw;
+          line-height: 11.2vw;
+        }
+      }
+}
